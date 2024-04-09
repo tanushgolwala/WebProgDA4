@@ -8,7 +8,6 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Use a path that captures the query parameter */}
         <Route path="/find" element={<Find />} />
       </Routes>
     </Router>
