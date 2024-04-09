@@ -12,11 +12,11 @@ const Home: React.FC = () => {
     return (
         <div>
             <Navbar />
-            <Hero />
-            <Destinations />
-            <Search />
-            <Selects />
-            <Carousel />
+            <Hero id="home" />
+            <Destinations id="destinations" />
+            <Search id="search" />
+            <Selects id="select" />
+            <Carousel id="catalogue" />
             <Footer />
         </div>
     );

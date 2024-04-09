@@ -27,11 +27,11 @@ const Navbar: React.FC = () => {
         </h1>
       </div>
       <ul className='hidden md:flex'>
-        <li>Home</li>
-        <li>Destinations</li>
-        <li>Travel</li>
-        <li>View</li>
-        <li>Book</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#search">Travel</a></li>
+        <li><a href="#select">View</a></li>
+        <li><a href="#catalogue">Catalogue</a></li>
       </ul>
       <div className='hidden md:flex'>
         <BiSearch className='' size={20} />
@@ -58,11 +58,11 @@ const Navbar: React.FC = () => {
       >
         <ul>
           <h1>TRAVELY.</h1>
-          <li className='border-b'>Home</li>
-          <li className='border-b'>Destinations</li>
-          <li className='border-b'>Travel</li>
-          <li className='border-b'>View</li>
-          <li className='border-b'>Book</li>
+          <li className='border-b'><a href="#home">Home</a></li>
+          <li className='border-b'><a href="#destinations">Destinations</a></li>
+          <li className='border-b'><a href="#travel">Travel</a></li>
+          <li className='border-b'><a href="#view">View</a></li>
+          <li className='border-b'><a href="#book">Book</a></li>
           <div className='flex flex-col'>
             <button className='my-6'>Search</button>
             <button>Account</button>
