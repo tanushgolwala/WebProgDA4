@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
     <div className='flex w-full justify-between items-center h-20 px-4 absolute z-10 text-white'>
       <div>
         <h1 onClick={handleNav} className={logo ? 'hidden' : 'block'}>
-          BEACHES.
+          TRAVELY.
         </h1>
       </div>
       <ul className='hidden md:flex'>
@@ -57,7 +57,7 @@ const Navbar: React.FC = () => {
         }
       >
         <ul>
-          <h1>BEACHES.</h1>
+          <h1>TRAVELY.</h1>
           <li className='border-b'>Home</li>
           <li className='border-b'>Destinations</li>
           <li className='border-b'>Travel</li>

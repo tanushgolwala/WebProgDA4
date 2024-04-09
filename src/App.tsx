@@ -1,23 +1,17 @@
 import React from 'react';
-import Carousel from './components/Carousel';
-import Destinations from './components/Destinations';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Search from './components/Search';
-import Selects from './components/Select';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './screens/Home';
+import Find from './screens/Find';
 
 const App: React.FC = () => {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Destinations />
-      <Search />
-      <Selects />
-      <Carousel />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Use a path that captures the query parameter */}
+        <Route path="/find" element={<Find />} />
+      </Routes>
+    </Router>
   );
 };
 

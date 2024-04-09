@@ -9,15 +9,7 @@ const Search: React.FC = () => {
         <div>
           <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>
           <p className='py-4'>
-            Come experience the very pinnacle of luxury Caribbean all-inclusive
-            vacations for couples at BEACHES Resorts. Our luxury beach resorts,
-            set along the most gorgeous tropical settings and exquisite beaches
-            in Saint Lucia, Jamaica, Antigua, The Bahamas, Grenada, Barbados and
-            Curaçao, feature unlimited gourmet dining, unique bars serving
-            premium liquors and wines, and every land and water sport, including
-            complimentary green fees at our golf resorts and certified scuba
-            diving at most resorts. If you are planning a wedding, BEACHES is
-            the leader in Caribbean destination weddings and honeymoon packages.
+          Experience the epitome of opulence with all-inclusive vacations tailored for couples at PALMS Resorts. Our luxurious beachfront destinations, nestled amidst the breathtaking landscapes and pristine shores of Goa, Kerala, Andaman Islands, Lakshadweep, Pondicherry, Karnataka, and Tamil Nadu, offer an array of delectable dining options, exclusive bars serving premium spirits, and an extensive range of land and water activities. Indulge in complimentary access to our golf resorts and embark on unforgettable underwater adventures with complimentary snorkeling excursions. Whether you're planning a grand wedding or a romantic honeymoon, PALMS is your ultimate destination for unforgettable experiences in the Indian paradise.
           </p>
         </div>
         <div className='grid sm:grid-cols-2 gap-8 py-4'>

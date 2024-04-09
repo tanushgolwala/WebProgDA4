@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiOutlineSearch } from 'react-icons/ai';
-import beachVid from '../assets/beachVid.mp4'
+import beachVid from '../assets/beachVid.mp4';
+import { Link } from 'react-router-dom';
 
+const Hero: React.FC = () => {
+  const [searchValue, setSearchValue] = useState<string>('');
 
-  const Hero: React.FC = () => {
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    window.location.href = `/find?query=${searchValue}`;
+  };
+
   return (
     <div className='w-full h-screen relative'>
       <video
@@ -18,6 +25,7 @@ import beachVid from '../assets/beachVid.mp4'
         <h1>First Class Travel</h1>
         <h2 className='py-4'>Top 1% Locations Worldwide</h2>
         <form
+          onSubmit={handleSearch} // Call handleSearch on form submission
           className='flex justify-between items-center max-w-[700px] mx-auto w-full border p-1
           rounded-md text-black bg-gray-100/90'
         >
@@ -26,11 +34,14 @@ import beachVid from '../assets/beachVid.mp4'
               className='bg-transparent w-[300px] sm:w-[400px] font-[Poppins] focus:outline-none'
               type='text'
               placeholder='Search Destinations'
+              value={searchValue} // Bind input value to searchValue state
+              onChange={(e) => setSearchValue(e.target.value)}
             />
           </div>
           <div>
-            <button>
-              <AiOutlineSearch size={20} className='icon' style={{color: '#ffffff'}} />
+            {/* Use button type="submit" to submit the form */}
+            <button type='submit'>
+              <AiOutlineSearch size={20} className='icon' style={{ color: '#ffffff' }} />
             </button>
           </div>
         </form>
