@@ -8,7 +8,7 @@ const Search: React.FC<{ id: string }> = ({ id }) => {
       <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 gap-4 px-4 py-16'>
         <div className='lg:col-span-2 flex flex-col justify-evenly'>
           <div>
-            <h2>LUXURY INCLUDED VACATIONS FOR TWO PEOPLE</h2>
+            <h2>LUXURY INCLUDED VACATIONS FOR EVERYONE</h2>
             <p className='py-4'>
               Experience the epitome of opulence with all-inclusive vacations tailored for couples at PALMS Resorts. Our luxurious beachfront destinations, nestled amidst the breathtaking landscapes and pristine shores of Goa, Kerala, Andaman Islands, Lakshadweep, Pondicherry, Karnataka, and Tamil Nadu, offer an array of delectable dining options, exclusive bars serving premium spirits, and an extensive range of land and water activities. Indulge in complimentary access to our golf resorts and embark on unforgettable underwater adventures with complimentary snorkeling excursions. Whether you're planning a grand wedding or a romantic honeymoon, PALMS is your ultimate destination for unforgettable experiences in the Indian paradise.
             </p>
